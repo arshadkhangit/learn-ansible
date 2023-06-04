@@ -1,0 +1,8 @@
+- name: Including another file
+  hosts: all
+  tasks:
+    - name: include task list
+      ansible.builtin.include_tasks:
+        file: sample.yml
+
+
