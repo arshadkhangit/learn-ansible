@@ -1,0 +1,9 @@
+-name: declare a variable
+hosts: all
+vars:
+  url: example.com
+  mail: a@email.com
+tasks:
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: URL - {{url}}
