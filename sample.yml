@@ -1,7 +1,7 @@
-- name: sample playbook
-  hosts: all
-  become: yes
-  tasks:
+#- name: sample playbook
+#  hosts: all
+#  become: yes
+#  tasks:
     - name: printing hello world
       ansible.builtin.debug:
         msg: Hello World
