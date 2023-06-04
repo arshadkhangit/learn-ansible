@@ -4,6 +4,10 @@
     url: example.com
     mail: a@email.com
   tasks:
-    - name: printing variables
+    - name: printing URL variable
       ansible.builtin.debug:
         msg: URL - {{url}}
+
+    - name: printing MAil variable
+      ansible.builtin.debug:
+        msg: Mail - {{mail}}
